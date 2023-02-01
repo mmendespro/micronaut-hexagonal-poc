@@ -6,7 +6,7 @@ import net.local.services.application.ports.persistence.IsbnGenerator;
 import net.local.services.application.services.BookManagerService;
 import net.local.services.infra.persistence.generators.UuidIsbnGenerator;
 import net.local.services.infra.persistence.respository.BookRepository;
-import net.local.services.infra.persistence.respository.H2BookRepository;
+import net.local.services.infra.persistence.respository.MySQLBookRepository;
 
 @Factory
 public class ApplicationConfig {
@@ -17,8 +17,8 @@ public class ApplicationConfig {
     }
 
     @Bean
-    public BookRepository bookRepository(H2BookRepository h2Repo) {
-        return new BookRepository(h2Repo);
+    public BookRepository bookRepository(MySQLBookRepository repo) {
+        return new BookRepository(repo);
     }
 
     @Bean

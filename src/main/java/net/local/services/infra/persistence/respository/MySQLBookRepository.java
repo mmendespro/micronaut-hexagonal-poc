@@ -7,7 +7,7 @@ import io.micronaut.data.repository.CrudRepository;
 import net.local.services.infra.persistence.entities.BookJPA;
 
 @Repository
-public interface H2BookRepository extends CrudRepository<BookJPA, String>{
+public interface MySQLBookRepository extends CrudRepository<BookJPA, String>{
 
     Optional<BookJPA> findByTitle(String title);
 }

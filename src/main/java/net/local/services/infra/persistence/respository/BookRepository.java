@@ -12,9 +12,9 @@ import net.local.services.infra.mappers.BookMapper;
 
 public class BookRepository implements LoadBookPort, SaveBookPort {
 
-    private final H2BookRepository repository;
+    private final MySQLBookRepository repository;
 
-    public BookRepository(H2BookRepository repository) {
+    public BookRepository(MySQLBookRepository repository) {
         this.repository = repository;
     }
 
