@@ -1,5 +1,5 @@
 ## MICRONAUT HEXAGONAL ARCHITECTURE
-It´s the same example of spring-hexagonal-arch-poc [https://github.com/mmendespro/spring-hexagonal-arch-poc.git] but using Quarkus framework.
+It´s the same example of spring-hexagonal-arch-poc [https://github.com/mmendespro/spring-hexagonal-arch-poc.git] but using Micronaut framework.
 
 ## Micronaut 3.7.1 Documentation
 
